@@ -5,6 +5,7 @@ export default function AvailablePlayers({
     playersPromise,
     addSelectedPlayer,
     removeSelectedPlayer,
+    selectedPlayers
 }) {
     const playersJson = use(playersPromise);
     return (
@@ -15,6 +16,7 @@ export default function AvailablePlayers({
                     player={player}
                     addSelectedPlayer={addSelectedPlayer}
                     removeSelectedPlayer={removeSelectedPlayer}
+                    selectedPlayers={selectedPlayers}
                 ></PlayerCard>
             ))}
         </div>

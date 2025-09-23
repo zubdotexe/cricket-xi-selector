@@ -62,6 +62,7 @@ function App() {
                         playersPromise={playersPromise}
                         addSelectedPlayer={addSelectedPlayer}
                         removeSelectedPlayer={removeSelectedPlayer}
+                        selectedPlayers={selectedPlayers}
                     ></AvailablePlayers>
                 ) : (
                     <SelectedPlayers selectedPlayers={selectedPlayers} removeSelectedPlayer={removeSelectedPlayer}></SelectedPlayers>

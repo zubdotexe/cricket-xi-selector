@@ -6,8 +6,11 @@ export default function PlayerCard({
     player,
     addSelectedPlayer,
     removeSelectedPlayer,
+    selectedPlayers
 }) {
-    const [playerSelected, setPlayerSelected] = useState(false);
+    const [playerSelected, setPlayerSelected] = useState(() => {
+        return selectedPlayers.includes(player); // using selectedPlayers array to make the player selection persistent across two tabs
+    });
 
     const handlePlayerSelected = () => {
         const newVal = !playerSelected;
