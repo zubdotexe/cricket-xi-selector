@@ -16,14 +16,17 @@ function App() {
     const [selectedPlayers, setSelectedPlayers] = useState([]);
 
     const addSelectedPlayer = (player) => {
-        console.log(player)
+        console.log(player);
         const updatedSelectedPlayers = [...selectedPlayers, player];
         setSelectedPlayers(updatedSelectedPlayers);
     };
-    
+
     const removeSelectedPlayer = (player) => {
-        console.log(player)
-        const updatedSelectedPlayers = selectedPlayers.filter(selected_player => selected_player.player_name !== player.player_name)
+        console.log(player);
+        const updatedSelectedPlayers = selectedPlayers.filter(
+            (selected_player) =>
+                selected_player.player_name !== player.player_name
+        );
         setSelectedPlayers(updatedSelectedPlayers);
     };
 
@@ -35,13 +38,18 @@ function App() {
             </header>
             <main className="max-w-[1320px] mx-auto mt-24">
                 <div className="flex justify-between items-center mb-8">
-                    <h2 className="font-bold text-2xl">{availablePlayers ? "Available Players" : `Selected Players ${selectedPlayers.length}/6`}</h2>
+                    <h2 className="font-bold text-2xl">
+                        {availablePlayers
+                            ? "Available Players"
+                            : `Selected Players ${selectedPlayers.length}/6`}
+                    </h2>
                     <div className="flex items-center rounded-2xl overflow-hidden border border-gray-300">
                         <p
                             onClick={() => setAvailablePlayers(true)}
                             className={`${
-                                availablePlayers ?
-                                "bg-[#E7FE29] font-bold text-black" : "text-gray-500 font-semibold"
+                                availablePlayers
+                                    ? "bg-[#E7FE29] font-bold text-black"
+                                    : "text-gray-500 font-semibold"
                             } px-6 py-3 cursor-pointer`}
                         >
                             Available
@@ -49,8 +57,9 @@ function App() {
                         <p
                             onClick={() => setAvailablePlayers(false)}
                             className={`${
-                                !availablePlayers ?
-                                "bg-[#E7FE29] font-bold text-black" : "text-gray-500 font-semibold"
+                                !availablePlayers
+                                    ? "bg-[#E7FE29] font-bold text-black"
+                                    : "text-gray-500 font-semibold"
                             } px-6 py-3 cursor-pointer`}
                         >
                             Selected (<span>{selectedPlayers.length}</span>)
@@ -65,7 +74,11 @@ function App() {
                         selectedPlayers={selectedPlayers}
                     ></AvailablePlayers>
                 ) : (
-                    <SelectedPlayers selectedPlayers={selectedPlayers} removeSelectedPlayer={removeSelectedPlayer}></SelectedPlayers>
+                    <SelectedPlayers
+                        selectedPlayers={selectedPlayers}
+                        removeSelectedPlayer={removeSelectedPlayer}
+                        setAvailablePlayers={setAvailablePlayers}
+                    ></SelectedPlayers>
                 )}
             </main>
         </>
