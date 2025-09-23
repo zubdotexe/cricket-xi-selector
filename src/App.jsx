@@ -33,8 +33,8 @@ function App() {
                 <Navbar></Navbar>
                 <Banner></Banner>
             </header>
-            <main className="max-w-[1320px] mx-auto mt-24 space-y-9">
-                <div className="flex justify-between">
+            <main className="max-w-[1320px] mx-auto mt-24">
+                <div className="flex justify-between items-center mb-8">
                     <h2 className="font-bold text-2xl">{availablePlayers ? "Available Players" : "Selected Players (4/6)"}</h2>
                     <div className="flex items-center rounded-2xl overflow-hidden border border-gray-300">
                         <p
@@ -64,7 +64,7 @@ function App() {
                         removeSelectedPlayer={removeSelectedPlayer}
                     ></AvailablePlayers>
                 ) : (
-                    <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+                    <SelectedPlayers selectedPlayers={selectedPlayers} removeSelectedPlayer={removeSelectedPlayer}></SelectedPlayers>
                 )}
             </main>
         </>
