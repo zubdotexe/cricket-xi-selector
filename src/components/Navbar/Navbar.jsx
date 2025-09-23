@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.png";
 import dollarImg from "../../assets/dollarImg.png";
 
-export function Navbar() {
+export default function Navbar() {
     return (
         <>
             <div className="navbar bg-base-100 max-w-[1320px] mx-auto mt-16">
