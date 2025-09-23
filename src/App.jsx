@@ -35,7 +35,7 @@ function App() {
             </header>
             <main className="max-w-[1320px] mx-auto mt-24">
                 <div className="flex justify-between items-center mb-8">
-                    <h2 className="font-bold text-2xl">{availablePlayers ? "Available Players" : "Selected Players (4/6)"}</h2>
+                    <h2 className="font-bold text-2xl">{availablePlayers ? "Available Players" : `Selected Players ${selectedPlayers.length}/6`}</h2>
                     <div className="flex items-center rounded-2xl overflow-hidden border border-gray-300">
                         <p
                             onClick={() => setAvailablePlayers(true)}
@@ -53,7 +53,7 @@ function App() {
                                 "bg-[#E7FE29] font-bold text-black" : "text-gray-500 font-semibold"
                             } px-6 py-3 cursor-pointer`}
                         >
-                            Selected (<span>0</span>)
+                            Selected (<span>{selectedPlayers.length}</span>)
                         </p>
                     </div>
                 </div>
