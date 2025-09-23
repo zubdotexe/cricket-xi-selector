@@ -1,0 +1,128 @@
+[
+  {
+    "player_img": "https://imgs.search.brave.com/nGl7e1QDPapMETWixxyeD3NizUMIf8BEhSnjUC_ApJY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2x1YmNyaWNrZXQu/Y28uemEvd3AtY29u/dGVudC91cGxvYWRz/LzIwMjUvMDUvamFz/b24tc21pdGgtNzc3/eDQzNy5qcGc",
+    "player_name": "Jason Smith",
+    "player_nation": "South Africa",
+    "player_role": "Batsman",
+    "player_rating": 8.1,
+    "strong_hand": "Left-handed batsman",
+    "price": 150000
+  },
+  {
+    "player_img": "https://i1.wp.com/crictoday.com/wp-content/uploads/2023/02/Mohammad-Rizwan-2.webp?strip=info&w=518&ssl=1",
+    "player_name": "Mohammad Rizwan",
+    "player_nation": "Pakistan",
+    "player_role": "Batsman",
+    "player_rating": 8.6,
+    "strong_hand": "Right-handed batsman, Right-arm medium bowler",
+    "price": 270000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/mDBwc_qyP_na_30z6YSqzE5tFlMHskYdlbH_pJZmPaY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/Mjg3MjU1OS9waG90/by9ub3R0aW5naGFt/LWVuZ2xhbmQtZW5n/bGFuZC1jYXB0YWlu/LWJlbi1zdG9rZXMt/bG9va3MtdXAtYXQt/dGhlLXNjb3JlYm9h/cmQtZHVyaW5nLWRh/eS1maXZlLW9mLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz16/S3JtbWVpZFVFRjVU/cGlvYjJOVVpYTnp5/S3lJOHVwb3Rnek5R/S2VMYkRnPQ",
+    "player_name": "Ben Stokes",
+    "player_nation": "England",
+    "player_role": "All-rounder",
+    "player_rating": 9.5,
+    "strong_hand": "Left-handed batsman, Right-arm medium-fast bowler",
+    "price": 550000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/bbsYS1pz9kOpbJF4sgRgN5TMIbz1foF16lCg8PA27Kw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/emFwY3JpY2tldC5j/b20vY2RuL3Nob3Av/YXJ0aWNsZXMvV2hh/dHNBcHBfSW1hZ2Vf/MjAyMy0wOC0wOV9h/dF8wOC4zNi4xNF8z/LndlYnA_dj0xNjkx/NTUyNTc3JndpZHRo/PTcyMA",
+    "player_name": "Kumar Sangakkara",
+    "player_nation": "Sri Lanka",
+    "player_role": "Batsman",
+    "player_rating": 9.2,
+    "strong_hand": "Left-handed batsman",
+    "price": 220000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/xjmsSXY6OMlLcfJeGZwxJHtxb6eGrqkmoqyK30EvBHc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDY1Njcw/ODkuanBn",
+    "player_name": "Rashid Khan",
+    "player_nation": "Afghanistan",
+    "player_role": "Bowler",
+    "player_rating": 9.3,
+    "strong_hand": "Right-arm leg-spinner",
+    "price": 350000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/a8Ahjvcg9GP2lyy--X4vFsnhF6cBTy-w921gYv9lJAU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc4/NTgzNzQ5NC9waG90/by9hdXN0cmFsaWFz/LWRhdmlkLXdhcm5l/ci13YWxrcy1iYWNr/LXRvLXRoZS1wYXZp/bGlvbi1hZnRlci1o/aXMtZGlzbWlzc2Fs/LWR1cmluZy10aGUt/MjAyMy1pY2MuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPUpr/U3hGUEpBWWZ0dG5j/aXBPaVYtNmZSYU9w/ak80ZU9qdkRHV0lz/UUJFdkk9",
+    "player_name": "David Warner",
+    "player_nation": "Australia",
+    "player_role": "Batsman",
+    "player_rating": 8.9,
+    "strong_hand": "Left-handed batsman",
+    "price": 400000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/WplPnd0oZyb8ItxQ4VKVZ5ffZMll5gc7QYK-irmXPSY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMjQw/NDU2OS5qcGc",
+    "player_name": "Shakib Al Hasan",
+    "player_nation": "Bangladesh",
+    "player_role": "All-rounder",
+    "player_rating": 9.6,
+    "strong_hand": "Left-handed batsman, Left-arm orthodox spinner",
+    "price": 500000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/MlkyoOxD3oFaPf8xOS10WrlanERZR_HA9tGSYSpqztY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9leHRl/cm5hbC1wcmV2aWV3/LnJlZGQuaXQvdGhl/eXJlLW5vdC10aGUt/YmVzdC1tb2Vlbi1h/bGktZGlzbWlzc2Vz/LXRoZS1oeXBlLWFy/b3VuZC12MC1mdGxQ/ZE9wSnBsX2lUME1G/TkRtUDlDckhfc0hz/YUdpcHRwblRpUmph/bGxBLmpwZz93aWR0/aD02NDAmY3JvcD1z/bWFydCZhdXRvPXdl/YnAmcz03ODQ4YTVh/ODU2NTY0MTIxOTUx/MzYzMGVjNTI1NTc4/MjVlYmM4MzUx",
+    "player_name": "Moeen Ali",
+    "player_nation": "England",
+    "player_role": "All-rounder",
+    "player_rating": 8.3,
+    "strong_hand": "Left-handed batsman, Right-arm off-spinner",
+    "price": 180000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/svPUob0n86pknmsnMlD90AMzlyua_HN7pEFZrvq9g90/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tdW0t/b2JqZWN0c3RvcmUu/ZTJlbmV0d29ya3Mu/bmV0L3RyaW5nY29p/bi9BX0xpc3RfU3Rh/ci9Ed2F5bmUtQnJh/dm8tY29udHJvdmVy/c3kuanBn",
+    "player_name": "Dwayne Bravo",
+    "player_nation": "West Indies",
+    "player_role": "Bowler",
+    "player_rating": 8.0,
+    "strong_hand": "Right-arm medium-fast bowler",
+    "price": 110000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/LLN4x8R2Y6WLdNvOkPFGYXvX_DxQzyKpKhNiHHoZe4k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvdmlyYXQta29o/bGkteWM4ZGZwY2pz/c3AzczRzZS5qcGc",
+    "player_name": "Virat Kohli",
+    "player_nation": "India",
+    "player_role": "Batsman",
+    "player_rating": 9.8,
+    "strong_hand": "Right-handed batsman",
+    "price": 750000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/WdGjwShz7frSqvo-X1jEXKGOTKnApSDnAJ6di6yFq1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYWxs/cmVwb3J0ZXIuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI1/LzA3L1NoYWktSG9w/ZS53ZWJw",
+    "player_name": "Shai Hope",
+    "player_nation": "West Indies",
+    "player_role": "Batsman",
+    "player_rating": 8.0,
+    "strong_hand": "Right-handed batsman",
+    "price": 140000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/uu-RibmNqpjoAamYgipJe-fxPArDqRuPlC78VJrbx7Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYx/MTk2NzIzMS9waG90/by9sYXVkZXJoaWxs/LWZsb3JpZGEtaGFy/ZGlrLXBhbmR5YS1v/Zi1pbmRpYS13YXJt/cy11cC1wcmlvci10/by1hLWdhbWUtYWdh/aW5zdC10aGUtd2Vz/dC1pbmRpZXMtYXQu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXUyVWlrZ1lfRjBx/ak1iek1wbGVIM2Np/MFg1d0owS1pmblJF/V1JmamdGT2c9",
+    "player_name": "Hardik Pandya",
+    "player_nation": "India",
+    "player_role": "All-rounder",
+    "player_rating": 8.7,
+    "strong_hand": "Right-handed batsman, Right-arm fast-medium bowler",
+    "price": 300000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/1kDiEcmMu2UXKWV1CecPCFn-eMLFbmBWx9rT3QRigM8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXN0cm9zYWdlLmNv/bS9jZWxlYnJpdHkt/aG9yb3Njb3BlL2lt/Zy9JbXJhbi1UYWhp/ci1ob3Jvc2NvcGUu/anBn",
+    "player_name": "Imran Tahir",
+    "player_nation": "South Africa",
+    "player_role": "Bowler",
+    "player_rating": 8.5,
+    "strong_hand": "Right-arm leg-spinner",
+    "price": 140000
+  },
+  {
+    "player_img": "https://imgs.search.brave.com/aZ3771cQ9GpqmxOiH3Z4LhP4uVD9TzVy0G1md299T1Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvZ2xl/bm4tbWF4d2VsbC1u/YXRpb25hbC1jcmlj/a2V0ZXItbTk0YWF1/MDlmMWhyY2p1cC5q/cGc",
+    "player_name": "Glenn Maxwell",
+    "player_nation": "Australia",
+    "player_role": "All-rounder",
+    "player_rating": 8.8,
+    "strong_hand": "Right-handed batsman, Right-arm off-spinner",
+    "price": 250000
+  }
+]
