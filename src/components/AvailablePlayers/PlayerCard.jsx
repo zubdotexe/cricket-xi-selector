@@ -1,7 +1,20 @@
 import userIcon from "../../assets/userIcon.png";
 import flagIcon from "../../assets/flagIcon.png";
+import { useState } from "react";
 
-export default function PlayerCard({ player }) {
+export default function PlayerCard({
+    player,
+    addSelectedPlayer,
+    removeSelectedPlayer,
+}) {
+    const [playerSelected, setPlayerSelected] = useState(false);
+
+    const handlePlayerSelected = () => {
+        const newVal = !playerSelected;
+        setPlayerSelected(newVal);
+        newVal ? addSelectedPlayer(player) : removeSelectedPlayer(player);
+    };
+
     return (
         <div className="p-6 space-y-4 border-1 border-gray-200 rounded-2xl cursor-pointer hover:shadow-md">
             <div className="w-full h-56 rounded-xl overflow-hidden">
@@ -36,7 +49,9 @@ export default function PlayerCard({ player }) {
                 <h3 className="font-bold">
                     Price: $<span>{player.price}</span>
                 </h3>
-                <button className="btn">Choose Player</button>
+                <button onClick={handlePlayerSelected} className="btn">
+                    {playerSelected ? "Drop Player" : "Choose Player"}
+                </button>
             </div>
         </div>
     );

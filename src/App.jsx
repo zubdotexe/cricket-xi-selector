@@ -2,14 +2,31 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 import { useState } from "react";
 
-const res = await fetch("/playersData.json");
-const playersJson = await res.json();
+const fetchPlayers = async () => {
+    const res = await fetch("/playersData.json");
+    return res.json();
+};
+const playersPromise = fetchPlayers();
 
 function App() {
     const [availablePlayers, setAvailablePlayers] = useState(true);
-    console.log(availablePlayers);
+    const [selectedPlayers, setSelectedPlayers] = useState([]);
+
+    const addSelectedPlayer = (player) => {
+        console.log(player)
+        const updatedSelectedPlayers = [...selectedPlayers, player];
+        setSelectedPlayers(updatedSelectedPlayers);
+    };
+    
+    const removeSelectedPlayer = (player) => {
+        console.log(player)
+        const updatedSelectedPlayers = selectedPlayers.filter(selected_player => selected_player.player_name !== player.player_name)
+        setSelectedPlayers(updatedSelectedPlayers);
+    };
+
     return (
         <>
             <header className="space-y-6">
@@ -18,7 +35,7 @@ function App() {
             </header>
             <main className="max-w-[1320px] mx-auto mt-24 space-y-9">
                 <div className="flex justify-between">
-                    <h2 className="font-bold text-2xl">Available Players</h2>
+                    <h2 className="font-bold text-2xl">{availablePlayers ? "Available Players" : "Selected Players (4/6)"}</h2>
                     <div className="flex items-center rounded-2xl overflow-hidden border border-gray-300">
                         <p
                             onClick={() => setAvailablePlayers(true)}
@@ -42,12 +59,13 @@ function App() {
                 </div>
                 {availablePlayers ? (
                     <AvailablePlayers
-                        playersJson={playersJson}
+                        playersPromise={playersPromise}
+                        addSelectedPlayer={addSelectedPlayer}
+                        removeSelectedPlayer={removeSelectedPlayer}
                     ></AvailablePlayers>
                 ) : (
-                    <h3>Selected Players</h3>
+                    <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
                 )}
-                {/* <h3>Selected Players</h3> */}
             </main>
         </>
     );
