@@ -8,13 +8,24 @@ export default function PlayerCard({
     addSelectedPlayer,
     removeSelectedPlayer,
     selectedPlayers,
-    availableBalance
+    availableBalance,
 }) {
     const [playerSelected, setPlayerSelected] = useState(() => {
         return selectedPlayers.includes(player); // using selectedPlayers array to make the player selection persistent across two tabs
     });
 
+    const handleSelection = () => {
+        const newVal = !playerSelected;
+        setPlayerSelected(newVal);
+        newVal ? addSelectedPlayer(player) : removeSelectedPlayer(player);
+    };
+
     const handlePlayerSelected = () => {
+        if (playerSelected) {
+            handleSelection();
+            return;
+        }
+
         const updatedBalance = availableBalance - player.price;
         if (updatedBalance < 0) {
             // console.log(updatedBalance);
@@ -26,7 +37,7 @@ export default function PlayerCard({
         if (selectedPlayers.length === 6) {
             alert("You can't add more than 6 players!");
             return;
-        } 
+        }
 
         const newVal = !playerSelected;
         setPlayerSelected(newVal);

@@ -9,7 +9,6 @@ import Copyright from "./components/Footer/Copyright";
 import { useState } from "react";
 import { ToastContainer, Slide } from "react-toastify";
 
-
 const fetchPlayers = async () => {
     const res = await fetch("/playersData.json");
     return res.json();
@@ -35,6 +34,8 @@ function App() {
             (selected_player) =>
                 selected_player.player_name !== player.player_name
         );
+
+        setAvailableBalance(availableBalance + player.price);
         setSelectedPlayers(updatedSelectedPlayers);
     };
 
@@ -120,7 +121,7 @@ function App() {
                 <Newsletter></Newsletter>
 
                 <Info></Info>
-                
+
                 <Copyright></Copyright>
             </footer>
             <ToastContainer transition={undefined} />
