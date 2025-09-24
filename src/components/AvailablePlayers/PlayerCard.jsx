@@ -1,18 +1,33 @@
 import userIcon from "../../assets/userIcon.png";
 import flagIcon from "../../assets/flagIcon.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function PlayerCard({
     player,
     addSelectedPlayer,
     removeSelectedPlayer,
-    selectedPlayers
+    selectedPlayers,
+    availableBalance
 }) {
     const [playerSelected, setPlayerSelected] = useState(() => {
         return selectedPlayers.includes(player); // using selectedPlayers array to make the player selection persistent across two tabs
     });
 
     const handlePlayerSelected = () => {
+        const updatedBalance = availableBalance - player.price;
+        if (updatedBalance < 0) {
+            // console.log(updatedBalance);
+            alert("Not enough coins!");
+            // toast("Not enough coins!");
+            return;
+        }
+
+        if (selectedPlayers.length === 6) {
+            alert("You can't add more than 6 players!");
+            return;
+        } 
+
         const newVal = !playerSelected;
         setPlayerSelected(newVal);
         newVal ? addSelectedPlayer(player) : removeSelectedPlayer(player);
