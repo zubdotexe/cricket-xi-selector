@@ -16,7 +16,7 @@ export default function selectedPlayers({
 
             <button
                 onClick={() => setAvailablePlayers(true)}
-                className="mt-6 cursor-pointer bg-[#E7FE29] rounded-xl px-5 py-3 font-bold outline-2 outline-black outline-offset-8 "
+                className="mt-6 mx-2 cursor-pointer bg-[#E7FE29] rounded-xl px-5 py-3 font-bold outline-2 outline-black outline-offset-8 "
             >
                 Add More Player
             </button>
