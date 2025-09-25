@@ -28,14 +28,14 @@ export default function PlayerCard({
 
         const updatedBalance = availableBalance - player.price;
         if (updatedBalance < 0) {
-            // console.log(updatedBalance);
-            alert("Not enough coins!");
-            // toast("Not enough coins!");
+            // alert("Not enough coins!");
+            toast.error("Not enough coins!");
             return;
         }
 
         if (selectedPlayers.length === 6) {
             alert("You can't add more than 6 players!");
+            toast.error("You can't add more than 6 players!");
             return;
         }
 

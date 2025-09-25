@@ -7,7 +7,7 @@ import Newsletter from "./components/Footer/Newsletter";
 import Info from "./components/Footer/Info";
 import Copyright from "./components/Footer/Copyright";
 import { useState } from "react";
-import { ToastContainer, Slide } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 const fetchPlayers = async () => {
     const res = await fetch("/playersData.json");
@@ -124,7 +124,7 @@ function App() {
 
                 <Copyright></Copyright>
             </footer>
-            <ToastContainer transition={undefined} />
+            <ToastContainer/>
         </>
     );
 }
