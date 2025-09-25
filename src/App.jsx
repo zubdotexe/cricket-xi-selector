@@ -117,14 +117,14 @@ function App() {
                     </div>
                 </section> */}
             </main>
-            <footer className="bg-[#06091A] relative pt-64 md:pt-48">
+            <footer className="bg-[#06091A] relative pt-48">
                 <Newsletter></Newsletter>
 
                 <Info></Info>
 
                 <Copyright></Copyright>
             </footer>
-            <ToastContainer/>
+            <ToastContainer />
         </>
     );
 }

@@ -2,7 +2,7 @@ import bgShadow from "../../assets/bg-shadow.png";
 
 export default function Newsletter() {
     return (
-        <div className="absolute -top-44 max-w-[1320px] left-5 right-5 mx-auto bg-white/15 rounded-3xl p-4 border border-white">
+        <div className="absolute -top-1/4 max-w-[1320px] left-5 right-5 mx-auto bg-white/15 rounded-3xl p-4 border border-white">
             <div className=" bg-white rounded-3xl overflow-hidden">
                 <div
                     style={{ backgroundImage: `url(${bgShadow})` }}
